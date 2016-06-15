@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "UI to get test GTIN's",
   "main": "server.js",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
   },
   "repository": {
     "type": "git",
@@ -15,7 +23,7 @@
     "UPC"
   ],
   "author": "Abilash Badri",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/abadri/gtin-ui/issues"
   },
