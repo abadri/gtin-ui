@@ -2,17 +2,17 @@
   "name": "gtin-ui",
   "version": "1.0.0",
   "description": "UI to get test GTIN's",
-  "main": "server.js",
+  "main": "index.js",
   "engines": {
     "node": "4.2.2"
   },
-  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "gtin-generator": "^1.0.4",
+    "hbs": "^4.0.0"
   },
   "repository": {
     "type": "git",
