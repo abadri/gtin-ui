@@ -11,6 +11,13 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs');
 
+app.get('/api/getGTIN', function(request, response) {
+    const data = {
+        gtin: gtin.getGTIN()
+    };
+    response.json(data);
+});
+
 app.get('/', function(request, response) {
     const data = {
         gtin: gtin.getGTIN()
