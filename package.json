@@ -1,0 +1,23 @@
+{
+  "name": "gtin-ui",
+  "version": "1.0.0",
+  "description": "UI to get test GTIN's",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abadri/gtin-ui.git"
+  },
+  "keywords": [
+    "GTIN",
+    "UPC"
+  ],
+  "author": "Abilash Badri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abadri/gtin-ui/issues"
+  },
+  "homepage": "https://github.com/abadri/gtin-ui#readme"
+}
