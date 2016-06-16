@@ -12,10 +12,24 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs');
 
 app.get('/api/getGTIN', function(request, response) {
-    const data = {
-        gtin: gtin.getGTIN()
+
+    var count = request.query.count && parseInt(request.query.count);
+    var data = {
+        gtin: []
     };
-    response.json(data);
+    if(count) {
+        var int = setInterval( function () {
+            data.gtin.push(gtin.getGTIN());
+            count--;
+            if(!count) {
+                clearInterval(int);
+                response.json(data);
+            }
+        }, 10);
+    } else {
+        data.gtin = gtin.getGTIN();
+        response.json(data);
+    }
 });
 
 app.get('/', function(request, response) {
